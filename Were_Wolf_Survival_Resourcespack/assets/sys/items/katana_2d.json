@@ -1,0 +1,21 @@
+{
+    "model": {
+        "type": "select",
+        "cases": [
+            {
+                "model": {
+                    "type": "model",
+                    "model": "sys:item/katana_2d"
+                },
+                "when": [
+                    "gui"
+                ]
+            }
+        ],
+        "fallback": {
+            "type": "model",
+            "model": "sys:item/katana_tou_break"
+        },
+        "property": "display_context"
+    }
+}
