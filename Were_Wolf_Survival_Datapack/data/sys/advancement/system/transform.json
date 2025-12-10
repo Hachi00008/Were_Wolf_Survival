@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "change":{
+            "trigger": "impossible"
+        }
+    },
+    "rewards": {
+        "function": "sys:player/transform/_"
+    }
+}

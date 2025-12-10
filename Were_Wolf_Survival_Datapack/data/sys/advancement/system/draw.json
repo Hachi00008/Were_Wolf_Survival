@@ -1,0 +1,60 @@
+{
+  "criteria": {
+    "swap_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:all_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": "heart_of_the_sea",
+                      "predicates": {
+                        "minecraft:custom_data": {
+                          "slash_sword": true
+                        }
+                      }
+                    },
+                    "offhand": {
+                      "items": "warped_fungus_on_a_stick",
+                      "predicates": {
+                        "minecraft:custom_data": {
+                          "no_carry":true
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "condition": "minecraft:entity_scores",
+                "entity": "this",
+                "scores": {
+                  "Weapon_Mode": 0
+                }
+              }
+            ]
+          }
+        ],
+        "items": [
+          {
+            "items": "heart_of_the_sea",
+            "predicates": {
+              "minecraft:custom_data": {
+                "slash_sword": true
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "sys:player/hunters_weapon/draw_check"
+  }
+}

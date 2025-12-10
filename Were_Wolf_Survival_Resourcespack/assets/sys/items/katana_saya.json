@@ -1,0 +1,21 @@
+{
+    "model": {
+        "type": "select",
+        "cases": [
+            {
+                "model": {
+                    "type": "model",
+                    "model": "item/air"
+                },
+                "when": [
+                    "gui"
+                ]
+            }
+        ],
+        "fallback": {
+            "type": "model",
+            "model": "sys:item/katana_saya"
+        },
+        "property": "display_context"
+    }
+}
