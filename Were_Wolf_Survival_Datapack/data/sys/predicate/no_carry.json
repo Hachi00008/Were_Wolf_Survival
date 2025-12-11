@@ -1,0 +1,7 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "nbt": "{Item:{components:{\"minecraft:custom_data\":{\"no_carry\":true}}}}"
+    }
+}

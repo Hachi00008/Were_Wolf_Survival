@@ -1,0 +1,21 @@
+{
+    "model": {
+        "type": "select",
+        "cases": [
+            {
+                "model": {
+                    "type": "model",
+                    "model": "item/structure_void"
+                },
+                "when": [
+                    "gui"
+                ]
+            }
+        ],
+        "fallback": {
+            "type": "model",
+            "model": "item/air"
+        },
+        "property": "display_context"
+    }
+}

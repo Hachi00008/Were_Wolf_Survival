@@ -1,0 +1,16 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "components": {
+                    "custom_data": {
+                        "untransform":true,
+                        "no_carry":true
+                    }
+                }
+            }
+        }
+    }
+}

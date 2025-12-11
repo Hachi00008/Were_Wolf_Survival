@@ -1,0 +1,19 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{Tags:[\"transform\"]}"
+            }
+        },
+        {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+                "Weapon_Mode": 0
+            }
+        }
+    ]
+}
