@@ -2,7 +2,7 @@
 #演出
     playsound block.beacon.deactivate master @a ~ ~ ~ 1.5 0.5
     playsound block.respawn_anchor.deplete master @a ~ ~ ~ 1.0 1.0
-    particle spit ~ ~ ~ 0.5 1 0.5 0 500
+    particle spit ~ ~ ~ 0.5 1.5 0.5 0 500
 #アイテム関連
     item replace entity @s weapon.mainhand with air
     function sys:player/inventory/save/_

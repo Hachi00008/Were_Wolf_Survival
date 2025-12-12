@@ -5,7 +5,7 @@
 #右クリ処理
     execute if score @s right_click matches 1.. run function sys:player/right_click
 #移動速度上昇
-    execute if predicate sys:speed_up run attribute @s movement_speed modifier add 05fed2e8-9c60-4a7c-b31d-bcdd69d1f93c 0.1 add_value
+    execute if predicate sys:speed_up run attribute @s movement_speed modifier add 05fed2e8-9c60-4a7c-b31d-bcdd69d1f93c 0.07 add_value
     execute unless predicate sys:speed_up run attribute @s movement_speed modifier remove 05fed2e8-9c60-4a7c-b31d-bcdd69d1f93c
 #変身可能
     tag @s remove cannot_untransform
