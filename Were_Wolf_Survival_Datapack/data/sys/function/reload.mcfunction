@@ -1,6 +1,8 @@
 ##/reloadで実行
 #oh_my_datの初期化
     function oh_my_dat:sys/load
+#p_motionの初期化
+    function p_motion:system/load
 #スコアボードの初期化
     function sys:init/scoreboard
 #チームの初期化

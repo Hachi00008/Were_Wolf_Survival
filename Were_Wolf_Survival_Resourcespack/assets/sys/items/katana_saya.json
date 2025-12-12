@@ -17,5 +17,6 @@
             "model": "sys:item/katana_saya"
         },
         "property": "display_context"
-    }
+    },
+    "hand_animation_on_swap": false
 }

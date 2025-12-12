@@ -23,3 +23,6 @@
     tag @s remove Team_Werewolf
 #役職リセット
     function sys:main/role/role_reset
+#チーム変更
+    team join Sanka @a
+    item replace entity @s weapon.mainhand with warped_fungus_on_a_stick[item_model="red_concrete",item_name={text:"参加に変更する",color:"green"},custom_data={fusanka:true}]

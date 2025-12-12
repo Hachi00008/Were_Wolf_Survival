@@ -11,7 +11,7 @@
 #移動速度上昇
     execute if predicate sys:speed_up run attribute @s movement_speed modifier add 05fed2e8-9c60-4a7c-b31d-bcdd69d1f93c 0.07 add_value
     execute unless predicate sys:speed_up run attribute @s movement_speed modifier remove 05fed2e8-9c60-4a7c-b31d-bcdd69d1f93c
-#変身可能
+#再度右クリ可能
     tag @s remove cannot_untransform
 #リセット
     advancement revoke @s only sys:system/tick
