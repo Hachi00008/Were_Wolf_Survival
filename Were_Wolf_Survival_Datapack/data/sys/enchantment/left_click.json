@@ -1,0 +1,28 @@
+{
+    "description": "左クリック用エンチャント",
+    "max_cost": {
+        "base": 30,
+        "per_level_above_first": 0
+    },
+    "min_cost": {
+        "base": 30,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 30,
+    "max_level": 1,
+    "slots": [
+        "hand"
+    ],
+    "supported_items": [],
+    "weight": 1,
+    "effects": {
+        "post_piercing_attack": [
+            {
+                "effect": {
+                    "type": "run_function",
+                    "function": "sys:player/left_click"
+                }
+            }
+        ]
+    }
+}

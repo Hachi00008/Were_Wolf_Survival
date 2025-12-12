@@ -11,6 +11,8 @@
 #時間変更
     time set day
     gamerule advance_time false
+#死体削除
+    kill @e[type=mannequin]
 #エフェクトクリア
     effect clear @a
 #リザルト表示

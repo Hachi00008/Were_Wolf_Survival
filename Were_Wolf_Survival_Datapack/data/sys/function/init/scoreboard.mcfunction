@@ -9,4 +9,5 @@
         scoreboard objectives add Change_time dummy
         scoreboard objectives add Role dummy
         scoreboard objectives add Role_count dummy
+        scoreboard objectives add Player_count dummy
 #スコアの設定

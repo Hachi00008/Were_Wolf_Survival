@@ -1,4 +1,7 @@
 ##ゲーム開始処理
+#参加人数記録
+    execute store result score $sanka Player_count if entity @a[team=Sanka]
+    execute unless score $sanka Player_count matches 1.. run return 0
 #マップの中心を設定していないならリセット
     execute if score $dummy Game_flag matches 1 run tellraw @s [{text:"[System] ",color:"white"},{text:"マップの中心を設定してません",color:"red"}]
     execute if score $dummy Game_flag matches 1 run playsound entity.villager.no master @s ~ ~ ~
