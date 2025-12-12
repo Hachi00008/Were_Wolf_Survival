@@ -1,0 +1,1 @@
+function sys:main/set_map_center

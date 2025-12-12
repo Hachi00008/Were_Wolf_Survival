@@ -12,3 +12,5 @@
     function sys:player/inventory/load/_
 #タグリセット
     tag @s remove transform
+#スコアリセット
+    scoreboard players set @s Change_time 0

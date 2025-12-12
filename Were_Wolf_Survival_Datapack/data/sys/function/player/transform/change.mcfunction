@@ -21,3 +21,5 @@
 #タグ付与
     tag @s add transform
     tag @s add cannot_untransform
+#スコア設定
+    scoreboard players set @s Change_time 3600
