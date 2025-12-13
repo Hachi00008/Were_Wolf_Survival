@@ -1,0 +1,14 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "texture": "clown"
+            }
+        ],
+        "humanoid_leggings": [
+            {
+                "texture": "clown_leggings"
+            }
+        ]
+    }
+}

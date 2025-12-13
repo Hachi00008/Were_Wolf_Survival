@@ -4,8 +4,12 @@
     execute if score @s Change_time matches 1.. run scoreboard players remove @s Change_time 1
     execute if score @s Change_time matches 1 run function sys:player/transform/untransform
 #移動不可アイテム
-    execute if entity @s[tag=transform] if score @s Weapon_Mode matches 0 unless items entity @s hotbar.0 * run item replace entity @s hotbar.0 with warped_fungus_on_a_stick[item_model="sys:item_barrier",custom_data={no_carry:true},tooltip_display={"hide_tooltip":true},item_name={text:""},enchantments={"sys:left_click":1},piercing_weapon={}]
-    execute if entity @s[tag=transform] if score @s Weapon_Mode matches 0 unless items entity @s hotbar.8 * run item replace entity @s hotbar.8 with warped_fungus_on_a_stick[item_name={text:"変身解除",color:"red"},item_model="sys:untransform",custom_data={"untransform":true,"no_carry":true}]
+    execute if entity @s[tag=transform] if score @s Weapon_Mode matches 0 unless items entity @s hotbar.0 * run item replace entity @s hotbar.0 with warped_fungus_on_a_stick[item_model="sys:item_barrier",custom_data={no_carry:true},tooltip_display={"hide_tooltip":true},item_name={text:""}]
+    execute if entity @s[tag=transform] unless items entity @s hotbar.8 * run item replace entity @s hotbar.8 with warped_fungus_on_a_stick[item_name={text:"変身解除",color:"red"},item_model="sys:untransform",custom_data={"untransform":true,"no_carry":true}]
+#変身時のアイテム
+    execute unless entity @s[tag=transform] run clear @s *[custom_data={"slash_sword":true}]
+    execute unless entity @s[tag=transform] run clear @s *[custom_data={"knife":true}]
+    
 #右クリ処理
     execute if score @s right_click matches 1.. run function sys:player/right_click
 #移動速度上昇

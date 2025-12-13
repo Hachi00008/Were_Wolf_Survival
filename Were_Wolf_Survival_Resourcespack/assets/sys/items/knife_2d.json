@@ -1,0 +1,21 @@
+{
+    "model": {
+        "type": "select",
+        "cases": [
+            {
+                "model": {
+                    "type": "model",
+                    "model": "sys:item/knife_2d"
+                },
+                "when": [
+                    "gui"
+                ]
+            }
+        ],
+        "fallback": {
+            "type": "model",
+            "model": "sys:item/knife_rust"
+        },
+        "property": "display_context"
+    }
+}

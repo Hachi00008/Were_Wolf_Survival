@@ -55,6 +55,6 @@
     }
   },
   "rewards": {
-    "function": "sys:player/hunters_weapon/sheathing_check"
+    "function": "sys:player/hunters_weapon/slash_sword/sheathing/_"
   }
 }
